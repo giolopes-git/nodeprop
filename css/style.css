@@ -1,0 +1,132 @@
+/* ======= RESET ======= */
+* {
+    margin: 0; 
+    padding: 0; 
+    font-size: 100%; 
+    border: none; 
+    outline: none; 
+    font-weight: 300; 
+    box-sizing: border-box; 
+    font-family: "Comic Neue", sans-serif;
+}
+
+.days-one-regular {
+font-family: "Days One", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.comic-neue-light {
+font-family: "Comic Neue", cursive;
+font-weight: 300;
+font-style: normal;
+}
+
+.comic-neue-regular {
+font-family: "Comic Neue", cursive;
+font-weight: 400;
+font-style: normal;
+}
+
+.comic-neue-bold {
+font-family: "Comic Neue", cursive;
+font-weight: 700;
+font-style: normal;
+}
+
+.comic-neue-light-italic {
+font-family: "Comic Neue", cursive;
+font-weight: 300;
+font-style: italic;
+}
+
+.comic-neue-regular-italic {
+font-family: "Comic Neue", cursive;
+font-weight: 400;
+font-style: italic;
+}
+
+.comic-neue-bold-italic {
+font-family: "Comic Neue", cursive;
+font-weight: 700;
+font-style: italic;
+}
+
+body{
+    background-color: #c3c3ed;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*CABEÇALHO*/
+.cabecalho{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+}
+
+.logo{
+    width: 56px;
+    height: 56px;
+    float: left;
+    background: url(../img/logo_sem_fundo.png) center center/56px no-repeat;
+    font-size: 0;
+}
+
+.btn-menu{
+    width: 56px;
+    height: 56px;
+    float: right;
+    text-align: center;
+    color: #fff;
+    border-radius: 56px;
+    cursor: pointer;
+    background: linear-gradient(to right, #8383be, #9e9ee2, #626394, #484971);
+}
+
+.menu{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(72,73,113,0.9);
+    top: 0;
+    left: 0;
+}
+
+.btn-close{
+    font-size: 3em;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+    margin-right: 5%;
+}
+
+.menu ul{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.menu li{
+    padding: 1.5%;
+}
+
+.menu li a{
+    font-size: 2em;
+    color: #fff;
+    padding: 1.5% 3%;
+}
+
+.menu li a:hover{
+    border: 1px solid #bdbde8;
+}
