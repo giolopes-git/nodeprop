@@ -25,7 +25,7 @@
         <a href="index.html"><h1 class="logo">Steno - Especializado em Desenvolvimento de Software</h1></a>
         <button class="btn-menu"><i class="fa fa-bars" aria-hidden="false"></i></button>
         <nav class="menu">
-            <a class="btn-close">X</a>
+            <a class="btn-close"><i class="fa fa-times"></i></a>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Clientes</a></li>
@@ -36,5 +36,74 @@
             </ul>
         </nav>
     </header>
+    <div class="banner">
+        <div class="title">
+            <h2>OUSE INOVAR! </h2>
+            <h3>Criamos experiências e estabelecemos ações estratégicas a consumidores</h3>
+        </div>
+
+        <div class="button">
+            <button class="btn-cadastrar">Cadastrar<i class="fa fa-arrow-circle-right"></i></button>
+            <button class="btn-sobre">Sobre<i class="fa fa-question-circle"></i></button>
+        </div>
+    </div>
+    <main class="servicos">
+        <article class="servico">
+            <a href="#"><img src="img/criacoes.jpg" alt="Campanhas puplicitárias"></a>
+            <div class="inner">
+                <a href="#">Campanhas Publicitárias</a>
+                <h4>Impressos, VTs e Jingles</h4>
+                <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica, mantendo-se essencialmente inalterada. Foi popularizada nos anos 60 com a disponibilização das folhas de Letraset, que continham passagens com Lorem Ipsum, e mais recentemente com os programas de publicação como o Aldus PageMaker que incluem versões do Lorem Ipsum.</p>
+            </div>
+        </article>
+        <article class="servico">
+            <a href="#"><img src="img/md.jpg" alt="Marketing Digital"></a>
+            <div class="inner">
+                <a href="#">Marketing Digital</a>
+                <h4>Administração de Redes Sociais</h4>
+                <p>Em 2016 coloquei como uma das metas do ano "Aprender a fazer um bom nhoque", mas foi só no final de 2018 que finalmente fiz um nhoque com cara e sabor de nhoque. Um prato que eu pensei "Eu pagaria por isso em um restaurante. Não pagaria muito caro, mas pagaria". E considerando meus talentos gastronômicos, pra mim isso foi uma baita conquista, que só foi possível porque eu me empenhei muito mais do que nos anos anteriores.</p>
+            </div>
+        </article>
+        <article class="servico">
+            <a href="#"><img src="img/cs.jpg" alt="Criação de Sites"></a>
+            <div class="inner">
+                <a href="#">Criação de Sites</a>
+                <h4>Sites Administráveis</h4>
+                <p>Com nosso gerador de texto aleatório você consegue gerar textos fictícios para preencher espaços de projetos de artes, websites e afins, é possível gerar até 3 modelos, palavras, sentenças e parágrafos.</p>
+            </div>
+        </article>
+    </main>
+    <!-- NEWSLETTER -->
+     <section class="newsletter">
+        <h2>Inscreva-se agora!</h2>
+        <h3>Receba novidades, dicas e muito mais</h3>
+        <form>
+            <input type="email" name="email" placeholder="digite seu email">            
+            <button>Cadastrar</button>
+        </form>
+     </section>
+
+     <footer class="rodape">
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+        </div>
+        <p class="copyright">
+            Copyright © Steno 2024. Todos os direitos reservados.
+        </p>
+     </footer>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(".btn-menu").click(function(){
+            $(".menu").show();     
+        });
+        $(".btn-close").click(function(){
+            $(".menu").hide();     
+        });
+    </script>
 </body>
 </html>
