@@ -7,8 +7,117 @@
     outline: none; 
     font-weight: 300; 
     box-sizing: border-box; 
-    font-family: "Comic Neue", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
 
 .days-one-regular {
 font-family: "Days One", sans-serif;
@@ -68,13 +177,32 @@ img{
     max-width: 100%;
 }
 
-/*CABEÇALHO*/
-.cabecalho{
+.container{
     width: 100%;
     float: left;
     padding: 3% 4%;
+    text-align: center;
 }
 
+/* BG COLOR */
+.bg-gradient{
+    background: linear-gradient(to right, #8383be, #9e9ee2, #626394, #484971);
+}
+
+.bg-purple{
+    background-color: #484971;
+}
+
+.bg-white{
+    background-color: #fff;
+}
+
+/* HELPERS */
+.radius{
+    border-radius: 7px;
+}
+
+/*CABEÇALHO*/
 .logo{
     width: 56px;
     height: 56px;
@@ -91,7 +219,6 @@ img{
     color: #fff;
     border-radius: 56px;
     cursor: pointer;
-    background: linear-gradient(to right, #8383be, #9e9ee2, #626394, #484971);
 }
 
 .menu{
@@ -133,10 +260,6 @@ img{
 }
 
 .banner{
-    width: 100%;
-    float: left;
-    text-align: center;
-    padding: 3% 4%;
     background: url(../img/bgnovo.jpg) no-repeat fixed;
 }
 
@@ -163,42 +286,30 @@ img{
     float: right;
 }
 
-.btn-cadastrar{
+.btn{
     width: 100%;
     font-size: 1.5em;
     text-align: left;
     cursor: pointer;
     padding: 5%;
-    border-radius: 10px;
-    background-color: #484971;
+}
+
+.btn-cadastrar{
     color: #fff;
     margin-top: 1%;
 }
+
 .btn-sobre{
-    width: 100%;
-    font-size: 1.5em;
-    text-align: left;
-    cursor: pointer;
-    padding: 5%;
-    border-radius: 10px;
-    background-color: #fff;
     color: #484971;
     margin-top: 2%;
 }
 
 /*serviços*/
-.servicos{
-    width: 100%;
-    float: left;
-    padding: 3% 4%;
-}
-
 .servico{
     width: 100%;
-    background-color: #fff;
     text-align: left;
-    border-radius: 7px;
     margin-bottom: 3%;
+    border-radius: 10px;
 }
 
 .servico img{
@@ -227,14 +338,7 @@ img{
     line-height: 1.5em;
 }
 
-.newsletter{
-    width: 100%;
-    float: left;
-    text-align: center;
-    padding: 3% 4%;
-    background-color: #484971;
-}
-
+/*NEWSLETTER*/
 .newsletter h2{
     font-size: 1.5em;
     color: #fff;
@@ -250,19 +354,166 @@ img{
 }
 
 .newsletter input{
-    background-color: #484971;
     border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 5%;
-    border-radius: 5px;
     width: 100%;
 }
 
 .newsletter button{
     width: 100%;
-    background-color: #fff;
     color: #484971;
     padding: 5%;
-    border-radius: 5px;
     cursor: pointer;
     margin-top: 2%;
+}
+
+/* RODAPÉ */
+.social-icons a{
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 3%;
+}
+
+.social-icons a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.social-iconsa:last-child{
+    margin-right: 0;
+}
+
+.copyright{
+    margin-top: 2%;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* 
+MEDIAS TYPES: servem para direcionar um bloco css para determinado tipo de meio de acesso.
+SCREEN: Para monitores ou dispositivos com telas coloridas e resolução adequada.
+PRINT: Para impressoras. Muito usado para dar uma versão de impressão do site.
+*/
+
+/*===== MOBILE FIRST =====*/
+/* SMALL DEVICES - SMARTPHONES */
+
+@media screen and (min-width: 600px) {
+    /* aqui se determina o tipo (que no caso é pra monitores e telas) e em qual situação esse bloco será usado */
+    .logo{
+        width: 150px;
+        float: left;
+        background: url(../img/logogrande.png) center center/150px no-repeat;
+    } 
+    .btn{
+        font-size: 2em;
+    }
+}
+
+/* SMALL DEVICES - TABLETS */
+@media screen and (min-width: 768px){
+    .servico{
+        width: 49%;
+        float: left;
+        margin-right: 2%;
+    }
+    .servico:nth-child(2){
+        /* essa pseudo classe vai aplicar o css a um determinado elemento*/
+        margin-right: 0;
+    }
+
+    .newsletter h2{
+        font-size: 2em;
+    }
+    .newsletter h3{
+        font-size: 1.5em;
+    }
+    .newsletter input{
+        width: 70%;
+        padding: 2%;
+        float: left;
+        margin-right: 1%;
+    }
+    .newsletter button{
+        width: 29%;
+        padding: 2%;
+        float: right;
+        margin-top: 0;
+    }
+}
+
+/* SMALL DEVICES - TABLETS E DESKTOPS */
+@media screen and (min-width: 960px){
+    .title{
+        width: 70%;
+        float: left;
+        text-align: left;
+    }
+    .title h2{
+        font-size: 3em;
+    }
+    .title h3{
+        font-size: 1.5em;
+    }
+
+    .button{
+        width: 29%;
+        float: right;
+        margin-top: 0;
+        margin-left: 1%;
+    }
+    .btn{
+        font-size: 1.5em;
+    }
+    .servico{
+        width: 32%;
+        margin-right: 2%;
+    }
+    .servico:nth-child(2){
+        margin-right: 2%;
+    }
+    .servico:nth-child(3){
+        margin-right: 0;
+    }
+    .newsletter input{
+        width: 60%;
+        float: none;
+    }
+    .newsletter button{
+        width: 20%;
+        float: none;
+    }
+}
+
+/* LARGE DEVICES - WIDE SCREENS */
+@media screen and (min-width: 960px){
+    .btn-menu{
+        display: none;
+    }
+    .btn-close{
+        display: none;
+    }
+    .menu{
+        width: auto;
+        height: 56px;
+        line-height: 56px;
+        float: right;
+        background-color: #c3c3ed;
+        display: block !important;
+        position: static;
+    }
+    .menu li{
+        padding: 0;
+        float: left;
+    }
+    .menu li a{
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 1em;
+        padding: 15px;
+        font-weight: 500;
+    }
+    .menu li a:hover{
+        border: none;
+        color: #fff;
+        font-weight: 700;
+    }
 }
